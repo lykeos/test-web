@@ -94,17 +94,98 @@ I specialize in extracting insights from data, building predictive models, and d
                     </div>
                   </div>
                 </div>
-                <div class="ratio ratio-2x1" style="--bs-aspect-ratio: 50%">
-                  <iframe
-                  src="https://docs.google.com/presentation/d/1U-kHbCu0bkhdfzml1t9cfEq3M0fO2F_p0e3VU9tGjVE/preview"
-                  frameborder="0"
-                  width="400"
-                  height="200"
-                  allowfullscreen="true"
-                  mozallowfullscreen="true"
-                  webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
+                <html lang="en">
+                <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Project Showcase</title>
+                  <style>
+                    body {
+                      background-color: white;
+                      font-family: Arial, sans-serif;
+                      margin: 0;
+                      padding: 20px;
+                    }
+
+                   .project-container {
+                      display: flex;
+                        justify-content: space-between;
+                      align-items: flex-start;
+                      gap: 20px;
+                      max-width: 1000px;
+                      margin: 0 auto;
+    }
+
+    /* PPT Preview */
+    .ppt-container iframe {
+      width: 100%;
+      height: 320px; /* Sesuaikan tinggi */
+      border: none;
+    }
+    .ppt-container {
+      flex: 1;
+    }
+
+    /* Deskripsi */
+    .project-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-desc {
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Tombol Go Project */
+    .go-project {
+      align-self: flex-end;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s ease-in-out;
+    }
+    .go-project:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+      .project-container {
+        flex-direction: column;
+      }
+      .go-project {
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="project-container">
+    <!-- PPT -->
+    <div class="ppt-container">
+      <!-- Ganti LINK_IFRAME_GOOGLE_SLIDES dengan link embed Google Slides -->
+      <iframe src="https://drive.google.com/file/d/1uNNLfGSUioU4iEaBldoDme4Id1pm51QG/view?usp=sharing" allowfullscreen></iframe>
+    </div>
+
+    <!-- Info -->
+    <div class="project-info">
+      <div class="project-desc">
+        <p>- Penjelasan singkat tentang project ini.</p>
+        <p>- Misalnya, project ini menggunakan analisis data dengan Python & Machine Learning.</p>
+        <p>- Tools: Pandas, Scikit-learn, Matplotlib.</p>
+      </div>
+      <a class="go-project" href="https://github.com/username/repository" target="_blank">
+        Go Project
+      </a>
+    </div>
+  </div>
                 <div class="col-md-4 mb-3">
                   <div class="card">
                       <img src="img/portfolio/Customer Churn Prediction.jpg" class="card-img-top" alt="Customer Churn Prediction">
