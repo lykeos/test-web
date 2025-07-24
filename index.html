@@ -94,39 +94,33 @@ I specialize in extracting insights from data, building predictive models, and d
                     </div>
                   </div>
                 </div>
-                <html lang="en">
-                <head>
-                  <meta charset="UTF-8">
-                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                  <title>Project Showcase</title>
-                  <style>
-                    body {
-                      background-color: white;
-                      font-family: Arial, sans-serif;
-                      margin: 0;
-                      padding: 20px;
-                    }
-
-                   .project-container {
-                      display: flex;
-                        justify-content: space-between;
-                      align-items: flex-start;
-                      gap: 20px;
-                      max-width: 1000px;
-                      margin: 0 auto;
-    }
-
-    /* PPT Preview */
-    .ppt-container iframe {
-      width: 100%;
-      height: 320px; /* Sesuaikan tinggi */
-      border: none;
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Showcase</title>
+  <style>
+    .project-frame {
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 90%;
+      margin: 20px auto;
+      background-color: #f9f9f9;
     }
     .ppt-container {
       flex: 1;
+      border: 2px solid red;
+      margin-right: 20px;
     }
-
-    /* Deskripsi */
+    .ppt-container iframe {
+      width: 100%;
+      height: 300px; /* sesuaikan tinggi */
+      border: none;
+    }
     .project-info {
       flex: 1;
       display: flex;
@@ -134,12 +128,10 @@ I specialize in extracting insights from data, building predictive models, and d
       justify-content: space-between;
     }
     .project-desc {
-      line-height: 1.6;
+      color: #555;
+      line-height: 1.5;
       margin-bottom: 20px;
-      color: #333;
     }
-
-    /* Tombol Go Project */
     .go-project {
       align-self: flex-end;
       background-color: #007BFF;
@@ -148,38 +140,27 @@ I specialize in extracting insights from data, building predictive models, and d
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.2s ease-in-out;
     }
     .go-project:hover {
       background-color: #0056b3;
-    }
-
-    /* Responsif */
-    @media (max-width: 768px) {
-      .project-container {
-        flex-direction: column;
-      }
-      .go-project {
-        align-self: center;
-      }
     }
   </style>
 </head>
 <body>
 
-  <div class="project-container">
+  <div class="project-frame">
     <!-- PPT -->
     <div class="ppt-container">
-      <!-- Ganti LINK_IFRAME_GOOGLE_SLIDES dengan link embed Google Slides -->
-      <iframe class="nav-link" href="https://drive.google.com/file/d/1uNNLfGSUioU4iEaBldoDme4Id1pm51QG/view?usp=sharing" allowfullscreen></iframe>
+      <!-- Ganti LINK_IFRAME_GOOGLE_SLIDES dengan link embed PPT dari Google Drive -->
+      <iframe src="https://drive.google.com/file/d/1uNNLfGSUioU4iEaBldoDme4Id1pm51QG/view?usp=sharing" allowfullscreen></iframe>
     </div>
 
     <!-- Info -->
     <div class="project-info">
       <div class="project-desc">
-        <p>- Penjelasan singkat tentang project ini.</p>
-        <p>- Misalnya, project ini menggunakan analisis data dengan Python & Machine Learning.</p>
-        <p>- Tools: Pandas, Scikit-learn, Matplotlib.</p>
+        <p>- Penjelasan singkat tentang PPT project.</p>
+        <p>- Misalnya ini adalah project analisis data dengan machine learning.</p>
+        <p>- Tools: Python, Pandas, Matplotlib.</p>
       </div>
       <a class="go-project" href="https://github.com/username/repository" target="_blank">
         Go Project
